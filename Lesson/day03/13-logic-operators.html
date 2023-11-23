@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+</head>
+
+<body>
+    <script>
+        const x = 15;
+        const y = 35;
+        const z = 13;
+        const k = 15;
+        const t = "elma";
+        const m = undefined;
+        const comp1 = x === 15 && z > 0 && y <= 50;
+        console.log(comp1);
+        const comp2 = x === 15 && z > 0 && y <= 50 && k !== 15;
+        console.log(comp2);
+        const comp3 = x < y || x + k > y || z ** 2 === 33;
+        console.log(comp3);
+        // Short circuit
+        const comp4 = t && y > 10 && k === 15;
+        console.log(comp4);
+        const comp5 = m && y > 10 && k === 15;
+        console.log(comp5);
+        const comp6 = k > 50 || t;
+        console.log(comp6);
+        const comp7 = t || k > 50;
+        console.log(comp7);
+        const comp8 = m || k > 50;
+        console.log(comp8);
+    </script>
+</body>
+
+</html>
+
+<!-- 
+
+! VEYA : ilk TRUE degerin bulunmasi yeterlidir. 
+        ! Digerlerinin kontrolune gerek yoktur. 
+        ! bu yuzden ilk true olan degiskenin degerini dondurur
+        ! hic true yoksa en sondaki elemanin degerini dondurur
+
+! VE: ilk false deegrinin bulunmasi yeterlidir
+     ! digerlerini kontrolune gerek yoktur
+     ! bu yuzden ilk false olan degiskenin degerini dondurur
+     ! hic false yoksa en sondaki elemanin degerini dondurur
+
+
+
+-->
