@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+
     <script>
         let num = 33;
         console.log(num);
@@ -19,8 +21,24 @@
         num++;
         console.log(num);
 
-        let result = "5" + num;
+        let result = "5" + num; // toplamaz yanyana yazar.
         console.log(result);
+
+        result = "5" + 10 + 13;
+        console.log(result);
+
+        result = "5" - 10 + 13;
+        console.log(result); //8 der cunku - yi matematiksel algilar
+
+        result = "5abc" - 10 + 13;
+        console.log(result); //NaN der
+        console.log(isNaN(result));// isnan ile nan midir(rakam degil mi) diyorsun o da true veya false veriyor.
+
+
+        result = 4 + 13 - "2" + 14;
+        console.log(result); // - isaretini matemaksel kabul eder.
+
+
     </script>
 
 </body>
