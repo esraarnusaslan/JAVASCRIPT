@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        const name = "Ali";
+        const surname = "Gel";
+        const textHello1 = "Hello" + " " + name + " " + surname;
+        console.log(textHello1);
+
+        const textHello2 = `Hello ${name} Gel`;
+        console.log(textHello2);
+
+        //================================================================   1.YOL  OLD
+
+        const html2 = ' <div><h2> Home Page</h2><p>Lorem ipsum dolor sit.</p></div > '
+
+
+
+        //================================================================   2.YOL OLD
+
+        let html = '';
+        html = html + '<div>';
+        html = html + '   <h2> Home Page</h2>';
+        html = html + '   <p>Lorem ipsum dolor sit.</p>';
+        html = html + '</div >';
+
+
+        //================================================================   3.YOL NEW ++ 
+
+        const html3 = `
+        <div>
+            <h2> Home Page</h2>
+            <p>Lorem ipsum dolor sit.
+                </p>
+                </div>
+        `;
+
+
+
+
+    </script>
+
+</body>
+
+</html>
