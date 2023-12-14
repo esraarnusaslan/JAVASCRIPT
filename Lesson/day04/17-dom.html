@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .title {
+        font-size: 4rem;
+        color: red;
+    }
+
+    .line {
+        text-decoration: underline;
+    }
+
+    .color-navy {
+        color: navy;
+    }
+</style>
+
+<body>
+
+    <h1 id="hello" class="line title">Hello World</h1>
+    <p id="about">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <script>
+
+
+        //once elemani seciyorsun
+        const h1 = document.querySelector('h1#hello');
+        console.log(h1);
+
+        console.log(h1.classList);
+
+        h1.classList.add("color-navy");
+        h1.classList.remove("line");
+
+
+    </script>
+
+</body>
+
+</html>
