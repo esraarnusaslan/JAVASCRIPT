@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="name" value="">
+    <button onclick="sayHello()">Say Hello</button>
+
+    <script>
+
+        function sayHello() {
+            const txtName = document.querySelector("#name");
+            const name = txtName.value;
+
+            const message = `Hello ${name}`;
+            alert(message);
+        }
+
+    </script>
+
+</body>
+
+</html>
