@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- innertext innerhtml olmaz cunku acilip kapanan tagler degiller -->
+
+    <input type="text" id="name" value="Ali Gel">
+    <input type="text" id="message">
+
+
+
+    <script>
+
+        const txtName = document.querySelector("#name");
+        const name = txtName.value;
+
+        const msg = document.querySelector("#message");
+        const message = `Good night ${name}`;
+
+        msg.value = message;
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
