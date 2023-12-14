@@ -7,39 +7,38 @@
     <title>Document</title>
 </head>
 
-<style>
-    .title {
-        font-size: 4rem;
-        color: red;
-    }
 
-    .line {
-        text-decoration: underline;
-    }
-
-    .color-navy {
-        color: navy;
-    }
-</style>
 
 <body>
 
-    <h1 id="hello" class="line title">Hello World</h1>
-    <p id="about">
-        Lorem ipsum dolor sit amet.
-    </p>
+    <h1 class="name">John Doe</h1>
+    <p class="message"> </p>
 
     <script>
 
+        const nameElement = document.querySelector('h1.name');
+        console.log(nameElement);//<h1 class="name">John Doe</h1>
 
-        //once elemani seciyorsun
-        const h1 = document.querySelector('h1#hello');
-        console.log(h1);
+        const name = nameElement.innerText;
+        console.log(name);//John Doe
 
-        console.log(h1.classList);
+        const message = `Hello ${name}`;
+        console.log(message);//Hello John Doe
 
-        h1.classList.add("color-navy");
-        h1.classList.remove("line");
+
+
+        const messageElement = document.querySelector('.message');
+        console.log(messageElement);// <p class="message"> </p>
+
+        messageElement.innerText = message;
+        console.log(messageElement);
+
+
+
+
+
+
+
 
 
     </script>
