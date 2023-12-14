@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference value</title>
+</head>
+
+<body>
+
+    <script>
+
+        // VALUE TYPE
+        // Javascript te string, number, bigint, boolean value type dır
+        let x = 55;
+        let y = x;
+        console.log(x === y); // value type değişkenlerin karşılaştırılmasında DEGERLER karşılaştırılır.
+        console.log(x, y);
+        y = 33;
+        console.log(x, y)
+        console.log(x === y);//false
+
+
+        // REFERENCE TYPE
+        // Object ve array reference type tır.
+        let car1 = { brand: "BMW", model: "5.21", color: "red" };
+        let car2 = car1;
+        console.log(car1, car2)
+        console.log(car1 === car2); // reference type değişkenlerin karşılaştırılmasında REFERANSLAR karşılaştırılır.
+        car2.color = "blue";
+        console.log(car1, car2)
+        let computer1 = { cpu: "Intel", ram: 16, disk: 512 }
+        let computer2 = { cpu: "Intel", ram: 16, disk: 512 }
+        console.log(computer1 === computer2);//false. farkli obje farkli adres oldugu icin 
+        console.log({} == {})// false ayri adresler
+        console.log([] == [])//false ayri adresler
+        console.log(computer1.ram === computer2.ram) // Burada değer kontrol edilir.
+
+    </script>
+
+</body>
+
+</html>
