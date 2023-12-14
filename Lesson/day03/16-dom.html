@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1><em>Hello DOM</em></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis non laborum facilis similique aliquam
+        harum unde fuga iusto voluptates modi repellat asperiores esse cupiditate iure nemo facere, quasi consequatur.
+    </p>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+
+        const h1Element = document.querySelector('h1');
+        console.log(h1Element);
+        console.log(h1Element.innerText);//h1 in icindeki yaziyi alir.
+        console.log(h1Element.innerHTML);
+
+        h1Element.innerText="<u>hello world</u>";
+        h1Element.innerHTML="<u>hello world</u>";
+
+        const ulElement = document.querySelector('.menu li');//illk ki yi secer
+        console.log(ulElement);
+
+        const ulElement2=document.querySelector(".menu li:last-child")
+        console.log(ulElement2);
+
+        console.log(ulElement2.innerText);
+        ulElement2.innerText="Contact Us";
+        console.log(ulElement2.innerText);
+
+        ulElement2.innerHTML=`<a href="#">Contact Us </a> `;
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
