@@ -39,6 +39,7 @@ method1();
     var a=5;//function scope
     if(true){
         var a=5;// block scope
+        console.log(a);// ! VAR if in icinde de olsa disinda da olsa yazdirir.
 
     }
 
@@ -47,3 +48,14 @@ method1();
     }
 
 } */
+
+
+/* 
+
+
+! VAR: function scope tur. ram bellekte cok fazla yer kaplar. birden fazla degisken olusturulur.
+! LET,CONST: block scope tur.  Sadece bir tane degisken tanimlanir.
+
+
+
+*/
