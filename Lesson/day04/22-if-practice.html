@@ -23,12 +23,12 @@
 
             const txtPrice = document.querySelector('#price');
             const elResult = document.querySelector('#result');
-            let price = txtPrice.value;
+            let price = Number(txtPrice.value);
 
             if (price > 500) {
                 price *= 0.9;
             }
-            elResult.innerHTML = price;
+            elResult.innerHTML = price.toFixed(2);// tofixed sadece number icin gecerli o yuzden yukarida number a cevirdik
         }
 
     </script>
