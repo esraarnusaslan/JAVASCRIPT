@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Practice</title>
+</head>
+
+<body>
+
+    <input type="number" id="price">
+    <button onclick="showPrice()">Show Price</button>
+
+    <p id="result"></p>
+
+
+
+
+    <script>
+
+        function showPrice() {
+
+            const txtPrice = document.querySelector('#price');
+            const elResult = document.querySelector('#result');
+            let price = txtPrice.value;
+
+            if (price > 500) {
+                price *= 0.9;
+            }
+            elResult.innerHTML = price;
+        }
+
+    </script>
+</body>
+
+</html>
