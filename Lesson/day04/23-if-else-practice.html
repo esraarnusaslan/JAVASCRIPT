@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Practice</title>
+</head>
+
+<body>
+
+    <input type="number" id="price">
+    <button onclick="showPrice()">Show Price</button>
+
+    <p id="result"></p>
+
+
+
+
+    <script>
+
+        function showPrice() {
+
+            const txtPrice = document.querySelector('#price');
+            const elResult = document.querySelector('#result');
+            let price = Number(txtPrice.value);
+
+            if (price > 500) {
+                price *= 0.9;
+
+            } else {
+                price *= 0.95;
+
+            }
+            elResult.innerHTML = price.toFixed(2);// tofixed sadece number icin gecerli o yuzden yukarida number a cevirdik
+        }
+
+    </script>
+</body>
+
+</html>
