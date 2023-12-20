@@ -1,18 +1,16 @@
-
-
-
 function setMode() {
+    const elBody = document.querySelector('body');
+    const btnMode = document.querySelector('#btnMode');
 
-    const elBody=document.querySelector('body');
+    if (elBody.classList.contains('light')) {
+        elBody.classList.remove('light');
+        elBody.classList.add('dark');
 
-    if(elBody.classList.contains("light")){
-        elBody.classList.remove("light");
-        elBody.classList.add("dark");
+        btnMode.textContent = 'Light';
+    } else {
+        elBody.classList.remove('dark');
+        elBody.classList.add('light');
 
-    }else{
-        elBody.classList.remove("dark");
-        elBody.classList.add("light");
-    }   
-
-
+        btnMode.textContent = 'Dark';
+    }
 }
