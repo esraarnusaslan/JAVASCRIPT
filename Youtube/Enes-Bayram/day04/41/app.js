@@ -3,7 +3,6 @@ let multiply = 1;
 
 for (let i = 1; i <= number; i++) {
     multiply *= i;
-    2;
 }
 
 alert(multiply);
