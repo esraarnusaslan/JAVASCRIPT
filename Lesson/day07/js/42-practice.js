@@ -7,8 +7,8 @@ document.querySelector('#btnGetAverage').addEventListener('click', () => {
         alert('Please enter valid score value');
         return;
     }
-    score1 = Number(txtScore1.value);
-    score2 = Number(txtScore2.value);
+    const score1 = Number(txtScore1.value);
+    const score2 = Number(txtScore2.value);
 
     const average = getAverage(score1, score2);
     const letter = convertToLetter(average);
