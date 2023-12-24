@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid brown;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.card input {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(197, 139, 68);
+    padding: 10px;
+    pointer-events: none;
+}
+
+.card button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.card .btn-guess {
+    background-color: bisque;
+    display: none;
+}
