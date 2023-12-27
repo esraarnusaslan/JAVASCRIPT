@@ -34,7 +34,7 @@ console.log(cars); //['bmw', 'toyota', 'renault', 'porsche', 'mercedes']
 //cars.splice(1, 4); // * 1. den basla 2 tane sil. index ile degil.
 //console.log(cars); //['bmw', 'mercedes']
 
-//cars.splice(2, 2, 'hyundai'); // 2 den basla 2 tane sil yerine hyundai yaz. index degil
+//cars.splice(2, 2, 'hyundai'); // 2 den basla 2 tane sil yerine hyundai yaz.
 //console.log(cars);
 
 //! TOSTRING
@@ -43,7 +43,7 @@ console.log(cars); //['bmw', 'toyota', 'renault', 'porsche', 'mercedes']
 
 //! JOIN
 ///console.log(cars);
-//let carsJoin=cars.join("-");
+//let carsJoin=cars.join("-");// varsayilan olarak , ile birlesir.
 //console.log(carsJoin);// * bmw-toyota-renault-porsche-mercedes
 
 //! CONCAT
@@ -53,7 +53,7 @@ console.log(cars); //['bmw', 'toyota', 'renault', 'porsche', 'mercedes']
 
 //! SLICE
 console.log(cars); //['bmw', 'toyota', 'renault', 'porsche', 'mercedes']
-//let carSlice=cars.slice(2);// 2. den sonra hepsini getir dedik. index degil
+//let carSlice=cars.slice(2);// 2. den sonra hepsini getir dedik. baslangic dahil bitis dahil degil
 //console.log(carSlice);// * ['renault', 'porsche', 'mercedes']
 
 //! REVERSE
@@ -74,3 +74,13 @@ console.log(carsIndexOf); // * kacinci indexte oldugunu donduruyor.yoksa -1 donu
 //! INCLUDES
 let result = cars.includes('opel');
 console.log(result); // * string dizide varsa true yoksa false donduruyor.
+
+//! FILL
+const eightXValues = Array(8).fill('X'); // 'X'değerine sahip 8 tane eleman oluşuturur.
+console.log(eightXValues); // ['X', 'X','X','X','X','X','X','X']
+
+//! isArray()
+const numbers = [1, 2, 3, 4, 5];
+console.log(Array.isArray(numbers)); // true   dizi mi degil mi diye kontrol eder
+const number = 100;
+console.log(Array.isArray(number)); // false
