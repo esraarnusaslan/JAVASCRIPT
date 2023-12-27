@@ -111,7 +111,7 @@ let shelfCode = findByCode(bookName);
 
 if (shelfCode != null) {
     showTheShelf(shelfCode);
-    shelfAdd(shelfCode);
+    shelfAdd();
 } else {
     alert('The book you entered is not available in our library.');
 }
