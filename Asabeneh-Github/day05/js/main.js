@@ -64,6 +64,36 @@ if (!isExist) {
     console.log(countries);
 }
 
+//! countries array dizisinden ilk 10 ülkeyi dilimleyin ( Slice edin )
+const sliceArray = countries.slice(0, 10);
+console.log(sliceArray);
+
+//! countries array dizisinden ortadaki ülkeleri bulun.
+console.log(countries); //['Albania', 'Bolivia', 'Canada', 'Denmark', 'Ethiopia', 'Finland', 'Germany', 'Hungary', 'Ireland', 'Japan', 'Kenya', 'Esra']
+
+if (countries.length % 2 == 0) {
+    console.log(countries[countries.length / 2]);
+    console.log(countries[countries.length / 2 + 1]);
+} else {
+    console.log(countries[countries.length]);
+}
+
+//! countries dizisini çift ise iki eşit diziye bölün. countries dizisi çift değilse, ilk yarı için bir ülke fazla olarak bölün
+let firstArr = [];
+let secondArr = [];
+
+if (countries.length % 2 === 0) {
+    const index = countries.length / 2;
+    firstArr = countries.slice(0, index);
+    secondArr = countries.slice(index);
+} else {
+    const index = Math.ceil(countries.length / 2);
+    firstArr = countries.slice(0, index);
+    secondArr = countries.slice(index);
+}
+console.log(firstArr);
+console.log(secondArr);
+
 const webTechs = [
     'HTML',
 
