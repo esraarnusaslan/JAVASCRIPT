@@ -61,7 +61,7 @@ console.log(itCompanies.toString()); //Facebook,Google,Microsoft,Apple,IBM,Oracl
 //! itCompanies dizisinde belirli bir şirketin olup olmadığını kontrol edin.
 //! Varsa şirketi geri döndürün, aksi takdirde not found geri döndürün.
 
-function company2(company) {
+/* function company2(company) {
     if (itCompanies.includes(company)) {
         return company;
     } else {
@@ -69,4 +69,61 @@ function company2(company) {
     }
 }
 
-console.log(company2('esra'));
+console.log(company2('esra')); */
+
+//! Birden fazla 'o' harfi içeren şirketleri filter metodunu kullanmadan filtreleyin.
+
+/* let companyFilter = [];
+
+for (let i = 0; i < itCompanies.length; i++) {
+    let oNumber = 0;
+    for (let j = 0; j < itCompanies[i].length; j++) {
+        if (itCompanies[i][j].toLowerCase() == 'o') {
+            oNumber++;
+        }
+    }
+    if (oNumber > 1) {
+        companyFilter.push(itCompanies[i]);
+    }
+}
+console.log(companyFilter); */
+
+// ! sort() metodunu kullanarak diziyi sıralayın.
+
+/* console.log(itCompanies);
+let shortCompany = itCompanies.sort();
+console.log(shortCompany); */
+
+//! reverse() metodunu kullanarak diziyi tersine çevirin.
+//console.log(itCompanies.reverse());
+
+//! Diziden ilk 3 şirketi dilimleyin ( Slice edin ).
+/* console.log(itCompanies);
+console.log(itCompanies.slice(0,3));  */
+
+//! Diziden son 3 şirketi dilimleyin ( Slice edin ).
+/* console.log(itCompanies);
+console.log(itCompanies.slice(itCompanies.length - 3)); */
+
+//! Ortadaki IT şirketini ya da şirketlerini diziden dilimleyin ( Slice edin ).
+/* console.log(itCompanies);
+const middleIndex = Math.floor(itCompanies.length / 2);
+console.log(itCompanies[middleIndex]); //Apple */
+
+//! İlk IT şirketini diziden kaldırın.
+/* let deletedFirstCompany = itCompanies.shift();
+console.log(itCompanies); */
+
+//! Ortadaki IT şirketini ya da şirketlerini diziden kaldırın.
+/* const middleIndex = Math.floor(itCompanies.length / 2);
+const deletedMiddleCompany = itCompanies.splice(middleIndex, 1); // middleIndex te 1 tane sil dedik
+console.log(itCompanies); */
+
+//! Sondaki IT şirketini diziden kaldırın.
+/* console.log(itCompanies);
+const deletedEndCompany = itCompanies.pop();
+console.log(itCompanies); */
+
+//! Bütün IT şirketlerini kaldırın.
+/* const deletedCompanies = itCompanies.splice(0, itCompanies.length);
+console.log(itCompanies); */
