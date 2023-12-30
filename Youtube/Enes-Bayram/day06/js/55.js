@@ -31,7 +31,7 @@ console.log(cars); //['bmw', 'toyota', 'renault', 'porsche', 'mercedes']
 //console.log(cars); //["hyundai",'bmw', 'toyota', 'renault', 'porsche', 'mercedes']
 //cars.splice(2, 0, 'hyundai'); // 2. indexe 0 silerek hyundai ekle demek
 //console.log(cars); //['bmw', 'toyota', 'hyundai', 'renault', 'porsche', 'mercedes']
-//cars.splice(1, 4); // * 1. den basla 2 tane sil. index ile degil.
+//cars.splice(1, 4); // * 1. den basla 2 tane sil. 
 //console.log(cars); //['bmw', 'mercedes']
 
 //cars.splice(2, 2, 'hyundai'); // 2 den basla 2 tane sil yerine hyundai yaz.
