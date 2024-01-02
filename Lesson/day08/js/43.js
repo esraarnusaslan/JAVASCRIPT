@@ -16,15 +16,15 @@ const car = {
     },
 };
 
-console.log(car, typeof car);
-console.log(car.engine.cylinders);
+console.log(car, typeof car); //object
+console.log(car.engine.cylinders); //4
 
 car.year = '2023';
-console.log(car.year);
+console.log(car.year); //2023
 
 car.start();
 
 // ! object dizi haline getirilir. Amac object elemanlarinin bir dizi icinde ITERATE edilmesidir.
 console.log(Object.entries(car));
-console.log(Object.keys(car));
-console.log(Object.values(car));
+console.log(Object.keys(car)); //['brand', 'model', 'color', 'year', 'engine', 'start']
+console.log(Object.values(car)); //['Ford', 'Mustang', 'black', '2023', {…}, ƒ]

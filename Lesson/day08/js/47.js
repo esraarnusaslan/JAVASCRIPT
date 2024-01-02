@@ -12,4 +12,4 @@ const setPrices = (arr, rate) => {
 };
 
 const newArr = setPrices(arr, 20);
-console.log('new arr', newArr);
+console.log('new arr:', newArr);
