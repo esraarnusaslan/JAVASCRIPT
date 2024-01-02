@@ -8,7 +8,7 @@ const lastName = ['doe', 'al', 'messy', 'jackson', 'jack'];
 //! For in
 /* for (let i in names) {
     console.log(names[i]);
-} */
+} //index
 
 const concat = (x, y) => {
     let nameAndLastName = [];
@@ -19,3 +19,9 @@ const concat = (x, y) => {
 };
 
 console.log(concat(names, lastName));
+*/
+
+//! For of
+for (let name of names) {
+    console.log(name);
+} //value
