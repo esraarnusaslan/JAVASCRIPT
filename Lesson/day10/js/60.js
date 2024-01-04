@@ -33,7 +33,7 @@ const products = [
     },
 ];
 
-//pipeline
+//pipeline-code sharing
 const filteredProducts = products
     .filter((product) => product.price > 500)
     .map((product) => ({ name: product.name, price: product.price }));
