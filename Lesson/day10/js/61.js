@@ -6,7 +6,8 @@ document.querySelector('#ddlCountries').addEventListener('change', (e) => {
     const country = getCountry(countryCode);
     console.log(country);
     loadTable(country);
-    showTable(country);
+    showTable();
+    
 });
 
 const loadData = () => {
@@ -68,12 +69,23 @@ const getCountry = (countryCode) => {
     return filteredCountries.length > 0 ? filteredCountries[0] : null;
 };
 
+const setTotalArea = (area) => {
+    document.querySelector('#totalArea').innerHTML = `${area.toFixed(2)} km<sup>2</sup>`;
+};
+
 const cnt = getCountry(798);
 console.log(cnt);
 loadTable(cnt);
 
 const getTotalArea = () => {
-    //reduce methodu
+    const totalArea = countries.reduce(
+        (total, country) => total + country.area,
+        0
+    );
+    return totalArea;
 };
 
 loadData();
+
+const totalArea = getTotalArea();
+    setTotalArea(totalArea);
