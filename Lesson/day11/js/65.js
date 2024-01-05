@@ -10,6 +10,9 @@ document.getElementById('btnShowLowScores').addEventListener('click', () => {
             document
                 .querySelector(`#tblStudents tbody tr:nth-child(${index + 1})`)
                 .classList.add('table-danger');
+
+            //closest
+            //pointEl.closest("tr")
         }
     });
 });
