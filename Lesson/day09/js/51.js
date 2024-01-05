@@ -25,3 +25,10 @@ console.log(concat(names, lastName));
 for (let name of names) {
     console.log(name);
 } //value
+
+const obj = { a: 1, b: 2, c: 3 };
+
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
+
