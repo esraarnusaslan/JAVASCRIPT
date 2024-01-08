@@ -3,6 +3,8 @@
 //local storage de datalar silinmez.
 //session da silinir.
 
+//! -----------session storage--------------
+
 console.log(window); //session ve locak storage window icindedir.
 
 //! Add Value
@@ -42,3 +44,13 @@ console.log(typeof value3); //string
 let value4 = JSON.parse(sessionStorage.getItem('names'));
 console.log(value4); //['Tom', 'Jack', 'Bob', 'Mary']
 console.log(typeof value4); //object
+
+//! ------------Local Storage------------
+
+localStorage.setItem('1', '34');
+localStorage.setItem(2, 45);
+let value5 = localStorage.getItem(2, 45);
+console.log(value5);
+console.log(typeof value5); //string
+
+//localStorage.clear();
