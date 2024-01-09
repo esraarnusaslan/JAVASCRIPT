@@ -1,4 +1,5 @@
 const selectDiv = document.querySelector('.wrapper');
+const h1 = document.querySelector('h1');
 const yearSpan = document.querySelector('.year');
 const year = document.querySelector('h1');
 const h2 = document.querySelector('h2');
@@ -15,6 +16,9 @@ selectDiv.style.flexDirection = 'column';
 selectDiv.style.justifyContent = 'center';
 selectDiv.style.alignItems = 'center';
 selectDiv.style.marginBottom = '0px';
+
+//! h1
+h1.style.position = 'relative';
 
 //! year Span
 yearSpan.style.fontSize = '100px';
@@ -57,6 +61,12 @@ console.log(hour);
 dateSpan.textContent = `${monthName} ${monthDay}, ${yearNow} ${hour}`;
 dateSpan.style.backgroundColor = 'greenYellow';
 dateSpan.style.padding = '10px 20px';
+
+//! container
+container.style.position = 'absolute';
+container.style.left = '0';
+container.style.right = '0';
+container.style.top = '250px';
 
 //! ul
 ul.style.listStyle = 'none';
