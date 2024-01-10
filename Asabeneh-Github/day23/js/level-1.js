@@ -44,6 +44,7 @@ button.addEventListener('click', () => {
     if (isNaN(inputValue) || inputValue <= 0) {
         input.setCustomValidity('Please enter a valid positive number');
         input.reportValidity();
+        input.value = '';
         return;
     }
     let numbersAll = '';

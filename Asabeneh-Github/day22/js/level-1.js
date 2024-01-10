@@ -1,19 +1,11 @@
-const title = document.querySelector('.title');
-const titleInDiv = document.querySelector('.title div');
-console.log(titleInDiv);
+const colTitle = document.querySelector('.colTitle');
 const h1 = document.querySelector('h1');
 const h5 = document.querySelector('h5');
 const h6 = document.querySelector('h6');
-const col = Array.from(document.querySelectorAll('.col'));
-console.log(col);
 
-//! titleInDiv
-titleInDiv.style.display = 'flex';
-titleInDiv.style.flexDirection = 'column';
-titleInDiv.style.justifyContent = 'center';
-titleInDiv.style.alignItems = 'center';
-titleInDiv.style.paddingTop = '20px';
-titleInDiv.style.paddingBottom = '20px';
+//! colTitle
+
+//! h1
 
 //! h5
 h5.style.textDecoration = 'underline';
@@ -23,7 +15,7 @@ h5.style.fontWeight = '400';
 h6.style.textDecoration = 'underline';
 h6.style.fontWeight = '400';
 
-//! col
+//! isPrime()
 
 const isPrime = (num) => {
     if (num <= 1) {
@@ -37,16 +29,32 @@ const isPrime = (num) => {
     return true;
 };
 
-col.forEach((element, index) => {
-    if (isPrime(index)) {
-        element.style.backgroundColor = 'pink';
-    } else if (index % 2 === 0) {
-        element.style.backgroundColor = 'green';
-    } else {
-        element.style.backgroundColor = 'yellow';
-    }
+//! colNumber
 
-    element.innerHTML = `${index}`;
-    element.style.margin = '5px 5px';
-    element.style.padding = '10px 10px';
-});
+const addNumbers = () => {
+    let colNumberAll = '';
+
+    for (let i = 0; i < 55; i++) {
+        colNumberAll += `<div class="col">${i}</div>`;
+    }
+    document.querySelector('.colNumbers').innerHTML = colNumberAll;
+    addEvenNumber();
+};
+
+//! add,even number
+
+const addEvenNumber = () => {
+    const colAll = document.querySelectorAll('.colNumbers .col');
+    colAll.forEach((element, index) => {
+        const num = parseInt(element.textContent);
+
+        if (isPrime(num)) {
+            element.style.backgroundColor = 'pink';
+        } else if ((num + 1) % 2 === 0) {
+            element.style.backgroundColor = 'green';
+        } else {
+            element.style.backgroundColor = 'yellow';
+        }
+    });
+};
+addNumbers();
