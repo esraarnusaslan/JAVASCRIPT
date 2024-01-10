@@ -11,10 +11,9 @@ const col = Array.from(document.querySelectorAll('.col'));
 header.style.textAlign = 'center';
 header.style.marginTop = '0';
 
-
 //! h2
 h2.style.fontSize = '70px';
-h2.style.margin="0"
+h2.style.margin = '0';
 h2.style.letterSpacing = '10px';
 
 //! h4
