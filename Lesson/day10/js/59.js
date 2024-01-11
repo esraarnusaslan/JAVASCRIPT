@@ -34,7 +34,7 @@ const products = [
 ];
 
 const filterProducts = (c) => {
-    debugger
+    
     const filteredProducts = products.filter((product) =>
         product.name.startsWith(c)
     );

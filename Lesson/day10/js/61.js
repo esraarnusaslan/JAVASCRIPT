@@ -7,7 +7,6 @@ document.querySelector('#ddlCountries').addEventListener('change', (e) => {
     console.log(country);
     loadTable(country);
     showTable();
-    
 });
 
 const loadData = () => {
@@ -70,7 +69,9 @@ const getCountry = (countryCode) => {
 };
 
 const setTotalArea = (area) => {
-    document.querySelector('#totalArea').innerHTML = `${area.toFixed(2)} km<sup>2</sup>`;
+    document.querySelector('#totalArea').innerHTML = `${area.toFixed(
+        2
+    )} km<sup>2</sup>`;
 };
 
 const cnt = getCountry(798);
@@ -88,4 +89,4 @@ const getTotalArea = () => {
 loadData();
 
 const totalArea = getTotalArea();
-    setTotalArea(totalArea);
+setTotalArea(totalArea);

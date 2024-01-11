@@ -55,3 +55,14 @@ const createEventsForTBodyRows = () => {
 loadStudents();
 createEventsForDeleteButtons();
 createEventsForTBodyRows();
+
+/* let myButton = document.getElementById('myButton');
+
+myButton.addEventListener('click', function (event) {
+    alert('Button clicked!');
+    event.stopPropagation(); // Bu satır, olayın yayılmasını durdurur.
+});
+
+document.body.addEventListener('click', function () {
+    alert('Body clicked!');
+}); */

@@ -10,3 +10,15 @@ document.getElementById('lnkAbout').addEventListener('click', (e) => {
     const link = e.target.getAttribute('href');
     location.href = link;
 });
+
+
+ // 'myDiv' elementini seç
+ var myDiv = document.getElementById('myDiv');
+
+ // 'myDiv' elementinin içindeki metni al
+ var content = myDiv.firstChild.nodeValue;
+ console.log("Initial content:", content);
+
+ // 'myDiv' elementinin içindeki metni değiştir
+ myDiv.firstChild.nodeValue = "Updated text.";
+ console.log("Updated content:", myDiv.firstChild.nodeValue);

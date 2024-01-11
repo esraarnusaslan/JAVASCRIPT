@@ -39,7 +39,7 @@ const createEventsForDeleteButtons = () => {
             const name = parentTR.querySelector('td').innerHTML;
             const result = confirm(`Are you sure you want to delete ${name}?`);
             if (result) {
-                parentTR.remove();
+                parentTR.remove(); //tr elementini sil demek.
             }
         });
     });
