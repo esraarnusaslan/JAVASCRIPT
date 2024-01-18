@@ -21,4 +21,13 @@ const stringSortDESC = (arr) => {
     return arr.sort((a, b) => b.localeCompare(a));
 };
 
-export { numberSortASC, stringSortASC, stringSortDESC, numberSortDESC };
+const randomMix = (arr) => {
+    return arr.sort(() => Math.random() - 0.5);
+};
+export {
+    numberSortASC,
+    stringSortASC,
+    stringSortDESC,
+    numberSortDESC,
+    randomMix,
+};

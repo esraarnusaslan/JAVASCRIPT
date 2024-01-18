@@ -3,6 +3,7 @@ import {
     numberSortDESC,
     stringSortASC,
     stringSortDESC,
+    randomMix,
 } from './module-practice.js';
 
 const arr1 = [123, -23, -90, 34, 12];
@@ -27,5 +28,10 @@ document.getElementById('btn3').addEventListener('click', () => {
 
 document.getElementById('btn4').addEventListener('click', () => {
     const sortedArr = stringSortDESC(arr2);
+    console.log(sortedArr); //['Mary', 'John', 'Jerry', '23']
+});
+
+document.getElementById('btn5').addEventListener('click', () => {
+    const sortedArr = randomMix(arr2);
     console.log(sortedArr); //['Mary', 'John', 'Jerry', '23']
 });
