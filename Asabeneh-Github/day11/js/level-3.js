@@ -77,7 +77,7 @@ const student = {
     },
 };
 
-const copiedStudent = { ...student };
+const copiedStudent = { ...student};
 console.log(copiedStudent);
 
 copiedStudent.skills.frontEnd.push({ skill: 'BootStrap', level: 8 });
