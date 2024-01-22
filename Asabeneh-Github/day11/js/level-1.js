@@ -72,11 +72,11 @@ console.log(destructuring);
 const firstThreeLetters = countries.map((country) =>
     country.substring(0, 3).toLowerCase()
 );
-console.log(firstThreeLetters);
+console.log(firstThreeLetters);//['fin', 'est', 'swe', 'den', 'nor']
 
 const [fin, est, sw, den, nor] = firstThreeLetters;
 console.log(fin, est, sw, den, nor);
-console.log(countries);
+console.log(countries);//['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 
 //! Dikdörtgen nesnesini özelliklerine veya
 //! anahtarlarına göre destructuring işlemi uygulayın.

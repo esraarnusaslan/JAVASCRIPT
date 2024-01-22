@@ -23,7 +23,7 @@ import { countries } from '../data/countries.js';
 
 /* const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]];
 
-const [name, skills, [htmScore, cssScore, jsScore, reactScore]] = student;
+const [name, skills, [, , jsScore, reactScore]] = student;
 console.log([name, skills, jsScore, reactScore]); */
 
 //! Diziyi bir structure nesnesine dönüştürebilen
@@ -43,13 +43,14 @@ const students = [
 console.log(transformedStudents); */
 
 //2.WAY
-const convertArrayToObject = [];
+/* const convertArrayToObject = [];
 for (const student of students) {
     const [name, skills, scores] = student;
     convertArrayToObject.push({ name, skills, scores });
 }
 
-console.log(convertArrayToObject);
+console.log(convertArrayToObject); */
+
 
 //! Öğrenci nesnesini orijinal nesneyi değiştirmeden newStudent'e
 //! kopyalayın.Yeni nesnede aşağıdakini ekleyin?
@@ -58,7 +59,7 @@ console.log(convertArrayToObject);
 //! dataBase beceri setlerine seviye 8 ile SQL ekleyin
 //! dataScience beceri setlerine seviye olmadan SQL ekleyin
 
-const student = {
+/* const student = {
     name: 'David',
     age: 25,
     skills: {
@@ -82,4 +83,4 @@ console.log(copiedStudent);
 
 copiedStudent.skills.frontEnd.push({ skill: 'BootStrap', level: 8 });
 copiedStudent.skills.backEnd.push({ skill: 'Express', level: 9 });
-copiedStudent.skills.dataBase.push({ skill: 'SQL', level: 8 });
+copiedStudent.skills.dataBase.push({ skill: 'SQL', level: 8 }); */
