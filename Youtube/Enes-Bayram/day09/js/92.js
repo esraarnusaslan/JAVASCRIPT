@@ -1,4 +1,6 @@
 const map1 = new Map();
+
+//set()
 map1.set(1, 'Tom');
 map1.set(true, 5);
 map1.set(false, '3');
@@ -7,6 +9,8 @@ map1.set(34, 'ABD');
 map1.set(32, 'England');
 map1.set(30, 'Canada');
 
+
+//get
 console.log(map1.get(34)); //ABD
 console.log(map1.get('30')); //undefined
 

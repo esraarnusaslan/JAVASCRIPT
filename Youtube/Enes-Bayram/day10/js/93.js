@@ -14,6 +14,10 @@ set.add([1, 2, 3]);
 //size
 console.log(set.size); //6
 
+
+//value()
+console.log(set.values());//SetIterator{'hello', 3.14, true, 7, {…},…}
+
 //! setler de bir deger sadece bir kere tutulur.
 
 //delete
