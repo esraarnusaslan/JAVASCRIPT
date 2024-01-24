@@ -1,7 +1,6 @@
 const sum = (a, b, cb) => {
     setTimeout(() => {
-        const result = a - b;
-        cb(result);
+        cb(a-b);
     }, 3000);
 };
 
