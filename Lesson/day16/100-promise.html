@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    
+
+    <script>
+        const soz = () => { 
+            return new Promise( (resolve, reject)=> {
+
+                // Bu bölümde asenkron çalışan çeşitli kodlar olur
+                // HArici servislere veya backend e bağlanan kodlar gibi
+                // Bu kodlar geriye bir sonuç döndürür
+
+                const result = Math.random() - 0.5 > 0 ? true : false;
+
+                if( result ){
+                    resolve({firstName: "John", lastName: "Doe"})
+                }
+                else{
+                    reject({type:"param_error", message:"invalid parameter"})
+                }
+
+            });
+
+
+         }
+
+
+
+         soz().then( (res) =>{
+            console.log(res)
+         } ).catch( (err) => {
+            console.log(err.message)
+         })
+
+
+    </script>
+</body>
+</html>

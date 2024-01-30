@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Practise</title>
+</head>
+<body>
+    
+    <button id="btn">Click Me</button>
+
+    <script>
+        // Confirm methodu senkron çalışır. Aşağıda asenkron çalışan bir confirm yaptık
+
+
+        document.getElementById("btn").addEventListener("click", ()=>{
+            confirmAsync("Are you sure to delete?").then( (resp)=>{
+                if(resp){
+                    console.log("Silindi")
+                }
+                else{
+                    console.log("Vazgeçildi")
+                }
+            } )
+
+            console.log("Hello")
+        });
+
+    
+
+
+        const confirmAsync = (msg) => { 
+            // Promise in kendisi asenkron değildir. Promise asenkron yapılardan sağlıklı bir şekilde
+            // veri döndürmek için kullanılır.
+            return new Promise( (resolve)=>{
+                setTimeout( ()=>{
+                    const resp = confirm(msg)
+                    resolve(resp);
+                }, 0 );
+
+            });
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

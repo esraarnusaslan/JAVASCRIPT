@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Chain</title>
+  </head>
+  <body>
+
+    <button id="btn">Click Me</button>
+
+
+    <script>
+      const getDistance = (a, b) => {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            const result = (a - b) * Math.floor(Math.random() * 50) + 1;
+            resolve(result); 
+          }, 3000);
+        });
+      };
+
+      const getCarPrice = (car, distance) => {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            const result = distance * Math.floor(Math.random() * 100) + 1;
+            resolve(result);
+          }, 1500);
+        });
+      };
+
+      const doPayment = (price) => {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            const result = Math.random() - 0.5;
+            result > 0 ? resolve("Ödeme başarılı") : reject("Ödemede hata oldu");
+          }, 4000);
+        });
+      };
+
+
+
+      document.getElementById("btn").addEventListener("click", async ()=>{
+        
+        try {
+
+          const distance = await getDistance(100, 20);
+          console.log(distance);
+
+          const price = await getCarPrice("Tesla", distance);
+          console.log(price)
+
+          const res = await doPayment(price);
+          console.log(res);
+
+          
+        } catch (err) {
+          console.log(err)
+        }
+
+
+
+
+      })
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
