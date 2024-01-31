@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+
+    <button id="btnLoadData">Load Data</button>
+    
+
+    <script>
+
+        document.getElementById("btnLoadData").addEventListener("click", ()=>{
+            fetch("https://carrental-v3-backend.herokuapp.com/car/visitors/all")
+            .then( (res) => res.json() )
+            .then( data=> console.log(data))
+        })
+
+
+    </script>
+</body>
+</html>
