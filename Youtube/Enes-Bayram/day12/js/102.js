@@ -35,7 +35,7 @@ const users = [
 
 //! senkrona cevirecegiz
 //*callback-promise-async-await
-function getUserId(userId) {
+function getUserId() {
     setTimeout(() => {
         return 5;
     }, 1000);
