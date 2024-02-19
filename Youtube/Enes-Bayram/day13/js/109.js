@@ -21,3 +21,15 @@ getData('https://jsonplaceholder.typicode.com/albums')
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((err) => console.log(err));
+
+//!POST
+
+const saveStudents = (url) => {
+    fetch('https://jsonplaceholder.typicode.com/user', {
+        method: 'POST',
+        headers: {
+            'Content type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+};
