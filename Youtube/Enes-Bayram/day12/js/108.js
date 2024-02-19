@@ -62,7 +62,7 @@ createPromise()
     .then((response) => console.log(response))
     .catch((error) => console.log(error)); */
 
-const getUsers = (url) => {
+/* const getUsers = (url) => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.addEventListener('readystatechange', () => {
@@ -90,4 +90,22 @@ getUsers('https://jsonplaceholder.typicode.com/users')
     .catch((error) => console.log(error))
     .finally(() => {
         //mail.send
+    }); */
+
+const p1 = Promise.resolve('First promise is successful');
+const p2 = Promise.resolve('Second promise is successful');
+const p3 = new Promise((resolve, reject) => {
+    resolve('Third promise is successful');
+});
+const p4 = Promise.reject('Error');
+
+Promise.all([p1, p2, p3, p4])
+    .then((res) => {
+        //console.log(res);
+        for (const value of res) {
+            console.log(value);
+        }
+    })
+    .catch((err) => {
+        console.log(err);
     });
