@@ -33,7 +33,7 @@ createPromise()
 
 //? PROMISE + XMLHTTPREQUEST
 
-const readStudents = (url) => {
+/* const readStudents = (url) => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
 
@@ -56,8 +56,38 @@ const readStudents = (url) => {
         xhr.open('GET', url);
         xhr.send();
     });
+}; */
+
+/* readStudents('../students.json')
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error)); */
+
+const getUsers = (url) => {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener('readystatechange', () => {
+            try {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    resolve(JSON.parse(xhr.responseText));
+                }
+            } catch (error) {
+                reject(error);
+            }
+        });
+        xhr.open('GET', url);
+        xhr.send();
+    });
 };
 
-readStudents('../students.json')
-    .then((response) => console.log(response))
-    .catch((error) => console.log(error));
+getUsers('https://jsonplaceholder.typicode.com/users')
+    .then((data) => {
+        //console.log(data);
+        data.forEach(user => {
+            console.log(user.name);
+        });
+        console.log('then we can run different asynchronous codes');
+    })
+    .catch((error) => console.log(error))
+    .finally(() => {
+        //mail.send
+    });
