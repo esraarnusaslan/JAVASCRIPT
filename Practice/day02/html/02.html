@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        margin: 2rem;
+        padding: 1rem;
+        width: 40%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+
+
+
+        <form>
+            <div class="mb-3">
+                <label for="midterm" class="form-label">Midterm</label>
+                <input type="number" class="form-control" id="midterm">
+
+            </div>
+            <div class="mb-3">
+                <label for="final" class="form-label">Final</label>
+                <input type="number" class="form-control" id="final">
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="calculate()">Submit</button>
+            <button type="reset" class="btn btn-primary" onclick="handleDelete()">Clear</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="../js/02.js"></script>
+</body>
+
+</html>
