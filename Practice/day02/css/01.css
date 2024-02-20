@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+}
+
+.record{
+    width: 30%;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(121, 128, 23, 0.78);
+    color: wheat;
+}
+
+#message{
+    font-size: larger;
+    background-color: crimson;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-style: italic;
+    display: none;
+    color: wheat;
+}
