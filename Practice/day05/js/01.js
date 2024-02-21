@@ -64,11 +64,11 @@ const bringThePeople = (index) => {
 
 let objectIndex = 0;
 next.addEventListener('click', () => {
-    objectIndex++;
     if (objectIndex > data.length - 1) {
         objectIndex = 0;
     }
     bringThePeople(objectIndex);
+    objectIndex++;
 });
 
 back.addEventListener('click', () => {
