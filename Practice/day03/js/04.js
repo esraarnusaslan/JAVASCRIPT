@@ -7,3 +7,11 @@ document.querySelector('.on').addEventListener('click', () => {
 document.querySelector('.off').addEventListener('click', () => {
     image.src = '../pexels-brett-sayles-3970096.jpg';
 });
+
+image.addEventListener('mouseover', () => {
+    image.src = '../pexels-brett-sayles-3970096.jpg';
+});
+
+image.addEventListener('mouseout', () => {
+    image.src = '../pexels-sonic-12102794.jpg';
+});
