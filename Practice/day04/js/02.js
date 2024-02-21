@@ -68,3 +68,11 @@ const filter = (length) => {
 };
 
 console.log(filter(3));
+
+const points1 = [34, 67, 89, 20, 10];
+const sum = points1.reduce((a, b) => a + b, 0);
+const average = sum / points1.length;
+console.log(average);
+
+const newPoints = points1.filter((number) => number >= average);
+console.log(newPoints);
