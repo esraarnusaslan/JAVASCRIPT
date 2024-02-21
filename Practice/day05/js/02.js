@@ -7,7 +7,7 @@ titles.addEventListener('click', (e) => {
         e.target.classList.add('active');
         const wanted = e.target.getAttribute('data-sec');
         productsImage.forEach((item) => {
-            if (wanted === 'image' || item.classList.contains(wanted)) {
+            if (item.classList.contains(wanted)) {
                 item.style.display = 'block';
             } else {
                 item.style.display = 'none';
